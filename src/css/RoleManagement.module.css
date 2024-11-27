@@ -1,0 +1,221 @@
+/* Container for the Role Management component */
+.roleManagementContainer {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+  }
+  
+  /* Header section */
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  /* Title styling */
+  .headerTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  /* Add role button */
+  .addRoleButton {
+    background-color: #48bb78;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addRoleButton:hover {
+    background-color: #38a169;
+  }
+  
+  /* Table styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f7fafc;
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f5f9;
+  }
+  
+  /* Action buttons */
+  .actionButton {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .editButton {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .editButton:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .deleteButton {
+    background-color: #e53e3e;
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c53030;
+  }
+  
+  /* Modal styles */
+  .modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalBox {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 500px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modalHeader {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #2c3e50;
+  }
+  
+  .modalInput,
+  .modalSelect {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .modalButton {
+    background-color: #48bb78;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modalButton:hover {
+    background-color: #38a169;
+  }
+  
+  .modalCancel {
+    color: #718096;
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .modalCancel:hover {
+    color: #4a5568;
+  }
+  
+  /* Delete Confirmation Modal Styles */
+  .deleteConfirmationBox {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .deleteConfirmationHeader {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 16px;
+  }
+  
+  .deleteConfirmationText {
+    color: #4a5568;
+    margin-bottom: 24px;
+  }
+  
+  .deleteConfirmationButtons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .deleteConfirmationButton {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancelButton {
+    background-color: #edf2f7;
+    color: #4a5568;
+  }
+  
+  .cancelButton:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .deleteButton {
+    background-color: #e53e3e;
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c53030;
+  }
+  
+  /* Animation for modal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

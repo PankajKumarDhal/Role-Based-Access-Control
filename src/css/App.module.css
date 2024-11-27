@@ -1,0 +1,38 @@
+.layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    /* width: 240px; Sidebar width */
+    background-color: #2d3748; /* Dark background for the sidebar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+  }
+  
+  .dashboard {
+    flex-grow: 1; /* Fills the remaining space */
+    padding: 2rem;
+    background-color: #f7fafc; /* Light background for the dashboard */
+    overflow-y: auto;
+  }
+  
+  .sidebarLink {
+    padding: 1rem;
+    color: #cbd5e0;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebarLink:hover {
+    background-color: #4a5568;
+    color: white;
+  }
+  
+  .sidebarTitle {
+    /* text-2xl font-bold text-white py-6 px-4 border-b border-blue-500; */
+  }
+  
